@@ -5,7 +5,8 @@
 #include "../shapes/shape.h"
 #include "../shapes/sphere.h"
 #include "../main/pray.h"
-#include "../ext/progress.h"
+#include "../utils/progress.h"
+#include "../utils/profile.h"
 
 class Camera {
 public:
@@ -41,26 +42,27 @@ public:
     }
 
     void render(Scene &scene) {
-        // progressbar bar(height * width * spp);
+        Progress bar(height * width * spp, "rendering");
+        PROFILE_ME_AS("Camera::render main loop");
         for (int j = 0; j < height; j++) {
             for (int i = 0; i < width; i++) {
                 color tmp(0, 0, 0);
-
+                PROFILE_ME_AS("Camera::render sampling");
                 for (int sample = 0; sample < spp; sample++) {
                     auto u = double(i + random_double()) / (width - 1);
                     auto v = double(j + random_double()) / (height - 1);
 
                     Ray r = get_ray(u, v);
-
                     Hit h;
 
+                    PROFILE_ME_AS("Scene::intersect");
                     if (scene.intersect(r, 0, 100, h)) {
                         tmp += 0.5 * (h.normal + vec3(1,1,1));
                     } else {
                         tmp += backgroud_color(r);
                     }
-
-                    // bar.update();
+                    
+                    bar.update();
                 }
 
                 film.set(i, j, tmp / spp);

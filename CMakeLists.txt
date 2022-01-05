@@ -235,7 +235,7 @@ SET ( PRAY_HEADERS
     src/shapes/shape.h
     src/shapes/sphere.h
     src/core/hit.h
-    src/ext/progress.h
+    src/utils/progress.h
 )
 
 INCLUDE_DIRECTORIES ( src )

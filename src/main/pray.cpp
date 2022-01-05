@@ -4,8 +4,12 @@
 #include "../maths/vec3.h"
 #include "../core/scene.h"
 #include "../shapes/sphere.h"
+#include "../utils/profile.h"
+#include <chrono>
+#include <thread>
 
 int main(int argc, char** argv) {
+    PROFILE_ME_AS("pray::main");
     Camera cam = Camera(400, 300, 90.f, vec3(0, 0, 0), 100);
     Scene scene = Scene();
 
@@ -14,4 +18,7 @@ int main(int argc, char** argv) {
 
     cam.render(scene);
     cam.film.dump_to_file("test.ppm");
+
+    PROFILE_END;
+    profiler::getInstance().print(std::cout, 60);
 }

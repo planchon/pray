@@ -5,6 +5,7 @@
 #include <vector>
 #include "../maths/vec3.h"
 #include "../maths/ray.h"
+#include "../utils/profile.h"
 
 class ImagePPM {
 public:
@@ -27,13 +28,6 @@ public:
         }
     }
 
-    inline void print_buffer() {
-        for (int i = 0; i < width * height; i+=3) {
-            printf("%f %f %f\n", data[i].x, data[i + 1].y, data[i + 2].z);
-        }
-        printf("----\n");
-    }
-
     void set(int x, int y, color pix) {
         int index = x + y * width;
         data[index] = pix;
@@ -46,6 +40,7 @@ public:
     }
 
     inline void dump_to_file(std::string filename) {
+        PROFILE_ME_AS("Dumping file");
         std::ofstream file;
         file.open(filename);
 

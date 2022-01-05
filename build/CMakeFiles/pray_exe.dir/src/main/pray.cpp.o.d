@@ -244,6 +244,7 @@ CMakeFiles/pray_exe.dir/src/main/pray.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk/usr/include/math.h \
   /Users/paulplanchon/dev/raytracing/pray/src/main/../core/../images/../maths/ray.h \
+  /Users/paulplanchon/dev/raytracing/pray/src/main/../core/../images/../utils/profile.h \
   /Users/paulplanchon/dev/raytracing/pray/src/main/../core/../core/scene.h \
   /Users/paulplanchon/dev/raytracing/pray/src/main/../core/../shapes/shape.h \
   /Users/paulplanchon/dev/raytracing/pray/src/main/../core/../shapes/../maths/ray.h \
@@ -257,6 +258,9 @@ CMakeFiles/pray_exe.dir/src/main/pray.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/numeric \
   /Users/paulplanchon/dev/raytracing/pray/src/main/../maths/vec3.h \
   /Users/paulplanchon/dev/raytracing/pray/src/main/../maths/ray.h \
-  /Users/paulplanchon/dev/raytracing/pray/src/main/../core/../ext/progress.h \
+  /Users/paulplanchon/dev/raytracing/pray/src/main/../core/../utils/progress.h \
+  /Users/paulplanchon/dev/raytracing/pray/src/main/../core/../utils/profile.h \
   /Users/paulplanchon/dev/raytracing/pray/src/main/../core/scene.h \
-  /Users/paulplanchon/dev/raytracing/pray/src/main/../shapes/sphere.h
+  /Users/paulplanchon/dev/raytracing/pray/src/main/../shapes/sphere.h \
+  /Users/paulplanchon/dev/raytracing/pray/src/main/../utils/profile.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk/usr/include/c++/v1/thread
