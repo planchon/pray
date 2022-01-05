@@ -1,0 +1,4 @@
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/pray.dir
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/pray_exe.dir
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/edit_cache.dir
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/rebuild_cache.dir

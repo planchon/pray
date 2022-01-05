@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libpray.a CMakeFiles/pray.dir/src/images/image.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libpray.a

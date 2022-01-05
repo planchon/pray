@@ -1,0 +1,196 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lSystem
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library not found for -lc++
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Performing C++ SOURCE FILE Test HAVE_CONSTEXPR failed with the following output:
+Change Dir: /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_14d74/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_14d74.dir/build.make CMakeFiles/cmTC_14d74.dir/build
+Building CXX object CMakeFiles/cmTC_14d74.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_CONSTEXPR  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -MD -MT CMakeFiles/cmTC_14d74.dir/src.cxx.o -MF CMakeFiles/cmTC_14d74.dir/src.cxx.o.d -o CMakeFiles/cmTC_14d74.dir/src.cxx.o -c /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx:1:14: error: unknown type name 'constexpr'
+int main() { constexpr int x = 0; }
+             ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_14d74.dir/src.cxx.o] Error 1
+make: *** [cmTC_14d74/fast] Error 2
+
+
+Source file was:
+int main() { constexpr int x = 0; }
+Performing C++ SOURCE FILE Test HAVE_ALIGNAS failed with the following output:
+Change Dir: /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a2af8/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a2af8.dir/build.make CMakeFiles/cmTC_a2af8.dir/build
+Building CXX object CMakeFiles/cmTC_a2af8.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_ALIGNAS  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -MD -MT CMakeFiles/cmTC_a2af8.dir/src.cxx.o -MF CMakeFiles/cmTC_a2af8.dir/src.cxx.o.d -o CMakeFiles/cmTC_a2af8.dir/src.cxx.o -c /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx:1:16: error: expected unqualified-id
+struct alignas(32) Foo { char x; }; int main() { }
+               ^
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx:1:16: error: expected ')'
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx:1:15: note: to match this '('
+struct alignas(32) Foo { char x; }; int main() { }
+              ^
+2 errors generated.
+make[1]: *** [CMakeFiles/cmTC_a2af8.dir/src.cxx.o] Error 1
+make: *** [cmTC_a2af8/fast] Error 2
+
+
+Source file was:
+struct alignas(32) Foo { char x; }; int main() { }
+Performing C++ SOURCE FILE Test HAVE_ALIGNOF failed with the following output:
+Change Dir: /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d84f4/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d84f4.dir/build.make CMakeFiles/cmTC_d84f4.dir/build
+Building CXX object CMakeFiles/cmTC_d84f4.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_ALIGNOF  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -MD -MT CMakeFiles/cmTC_d84f4.dir/src.cxx.o -MF CMakeFiles/cmTC_d84f4.dir/src.cxx.o.d -o CMakeFiles/cmTC_d84f4.dir/src.cxx.o -c /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx:1:36: error: expected '(' for function-style cast or type construction
+int main() { int x = alignof(double); }
+                             ~~~~~~^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_d84f4.dir/src.cxx.o] Error 1
+make: *** [cmTC_d84f4/fast] Error 2
+
+
+Source file was:
+int main() { int x = alignof(double); }
+Performing C++ SOURCE FILE Test HAVE_NONPOD_IN_UNIONS failed with the following output:
+Change Dir: /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_dfe80/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_dfe80.dir/build.make CMakeFiles/cmTC_dfe80.dir/build
+Building CXX object CMakeFiles/cmTC_dfe80.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_NONPOD_IN_UNIONS  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -MD -MT CMakeFiles/cmTC_dfe80.dir/src.cxx.o -MF CMakeFiles/cmTC_dfe80.dir/src.cxx.o.d -o CMakeFiles/cmTC_dfe80.dir/src.cxx.o -c /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx:3:37: error: union member 'b' has a non-trivial default constructor
+struct Foo { union { int x[10]; Bar b; }; Foo() : b() { } };
+                                    ^
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx:2:21: note: because type 'Bar' has a user-provided default constructor
+class Bar { public: Bar() { x = 0; } float x; };
+                    ^
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx:3:51: error: member initializer 'b' does not name a non-static data member or base class
+struct Foo { union { int x[10]; Bar b; }; Foo() : b() { } };
+                                                  ^~~
+2 errors generated.
+make[1]: *** [CMakeFiles/cmTC_dfe80.dir/src.cxx.o] Error 1
+make: *** [cmTC_dfe80/fast] Error 2
+
+
+Source file was:
+
+class Bar { public: Bar() { x = 0; } float x; };
+struct Foo { union { int x[10]; Bar b; }; Foo() : b() { } };
+int main() { Foo f; }
+
+Performing C++ SOURCE FILE Test HAVE_DECLSPEC_NOINLINE failed with the following output:
+Change Dir: /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_63310/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_63310.dir/build.make CMakeFiles/cmTC_63310.dir/build
+Building CXX object CMakeFiles/cmTC_63310.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_DECLSPEC_NOINLINE  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -MD -MT CMakeFiles/cmTC_63310.dir/src.cxx.o -MF CMakeFiles/cmTC_63310.dir/src.cxx.o.d -o CMakeFiles/cmTC_63310.dir/src.cxx.o -c /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx:1:1: error: '__declspec' attributes are not enabled; use '-fdeclspec' or '-fms-extensions' to enable support for __declspec attributes
+__declspec(noinline) void foo() { }
+^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_63310.dir/src.cxx.o] Error 1
+make: *** [cmTC_63310/fast] Error 2
+
+
+Source file was:
+__declspec(noinline) void foo() { }
+int main() { }
+Performing C++ SOURCE FILE Test HAVE__ALIGNED_MALLOC failed with the following output:
+Change Dir: /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6a504/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6a504.dir/build.make CMakeFiles/cmTC_6a504.dir/build
+Building CXX object CMakeFiles/cmTC_6a504.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE__ALIGNED_MALLOC  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -MD -MT CMakeFiles/cmTC_6a504.dir/src.cxx.o -MF CMakeFiles/cmTC_6a504.dir/src.cxx.o.d -o CMakeFiles/cmTC_6a504.dir/src.cxx.o -c /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx:2:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_6a504.dir/src.cxx.o] Error 1
+make: *** [cmTC_6a504/fast] Error 2
+
+
+Source file was:
+
+#include <malloc.h>
+int main() { void * ptr = _aligned_malloc(1024, 32); }
+
+Performing C++ SOURCE FILE Test HAVE_MEMALIGN failed with the following output:
+Change Dir: /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a344e/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a344e.dir/build.make CMakeFiles/cmTC_a344e.dir/build
+Building CXX object CMakeFiles/cmTC_a344e.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_MEMALIGN  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -MD -MT CMakeFiles/cmTC_a344e.dir/src.cxx.o -MF CMakeFiles/cmTC_a344e.dir/src.cxx.o.d -o CMakeFiles/cmTC_a344e.dir/src.cxx.o -c /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx:2:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a344e.dir/src.cxx.o] Error 1
+make: *** [cmTC_a344e/fast] Error 2
+
+
+Source file was:
+
+#include <malloc.h>
+int main() {
+    void *ptr = memalign(32, 1024);
+} 
+Performing C++ SOURCE FILE Test HAVE_THREAD_LOCAL failed with the following output:
+Change Dir: /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_546b1/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_546b1.dir/build.make CMakeFiles/cmTC_546b1.dir/build
+Building CXX object CMakeFiles/cmTC_546b1.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_THREAD_LOCAL  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -MD -MT CMakeFiles/cmTC_546b1.dir/src.cxx.o -MF CMakeFiles/cmTC_546b1.dir/src.cxx.o.d -o CMakeFiles/cmTC_546b1.dir/src.cxx.o -c /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx:6:1: error: unknown type name 'thread_local'
+thread_local int x; int main() { }
+^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_546b1.dir/src.cxx.o] Error 1
+make: *** [cmTC_546b1/fast] Error 2
+
+
+Source file was:
+
+#ifdef __CYGWIN__
+// Hack to work around https://gcc.gnu.org/bugzilla/show_bug.cgi?id=64697
+#error "No thread_local on cygwin"
+#endif  // __CYGWIN__
+thread_local int x; int main() { }
+
+Performing C++ SOURCE FILE Test HAVE_DECLSPEC_THREAD failed with the following output:
+Change Dir: /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3c00f/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3c00f.dir/build.make CMakeFiles/cmTC_3c00f.dir/build
+Building CXX object CMakeFiles/cmTC_3c00f.dir/src.cxx.o
+/Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_DECLSPEC_THREAD  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.0.sdk -MD -MT CMakeFiles/cmTC_3c00f.dir/src.cxx.o -MF CMakeFiles/cmTC_3c00f.dir/src.cxx.o.d -o CMakeFiles/cmTC_3c00f.dir/src.cxx.o -c /Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx
+/Users/paulplanchon/dev/raytracing/pray/build/CMakeFiles/CMakeTmp/src.cxx:2:1: error: '__declspec' attributes are not enabled; use '-fdeclspec' or '-fms-extensions' to enable support for __declspec attributes
+__declspec(thread) int x; int main() { }
+^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_3c00f.dir/src.cxx.o] Error 1
+make: *** [cmTC_3c00f/fast] Error 2
+
+
+Source file was:
+
+__declspec(thread) int x; int main() { }
+
