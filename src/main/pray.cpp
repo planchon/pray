@@ -5,6 +5,7 @@
 #include "../core/scene.h"
 #include "../shapes/sphere.h"
 #include "../utils/profile.h"
+
 #include <chrono>
 #include <thread>
 
